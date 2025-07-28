@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Shef – Ton resto, sans les crises de nerfs.</title>
+    <link rel="icon" href="assets/images/favicon.png" type="image/png"
+      sizes="64x64">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description"
+      content="Shef – Ton resto, sans les crises de nerfs.">
+    <meta name="keywords"
+      content="Shef HACCP et opérations quotidiennes pour ton resto.">
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"
+      media="all" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Resource style -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    <link rel="stylesheet" href="assets/css/ionicons.min.css">
+    <!-- Resource style -->
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css"
+      media="all" />
+    <style>
+        .navbar .navbar-brand img {
+          width: 70px;
+        }
+        .btn-outline {
+          background-color: #fff;
+          border: 2px solid !important;
+          color:#00B5A4;
+        }
+        .btn-outline:hover {
+          border: 2px solid !important;
+          color:#00B5A4;
+        }
+        .hero-secondary-text {
+          color:#E43387 !important;
+          margin-bottom: 0px !important;
+        }
+        .pricing-section .table-right {
+          color: #FFFFFF !important;
+          background: rgb(228, 51, 135);
+          background: linear-gradient(141deg, rgba(228, 51, 135,1) 0%, rgba(0, 181, 164,1) 100%);
+        }
+        .hero h1 {
+            font-size: 22px;
+            font-weight: 700;
+            color: #00B5A4;
+            line-height: 1.6;
+            letter-spacing: -1px;
+        }
+        .hero h2 {
+            font-size: 18px;
+            font-weight: 700;
+            color: #E43387;
+            line-height: 1.3;
+            letter-spacing: 1px;
+        }
+        h3 {
+            font-size: 20px;
+            font-weight: 700;
+            color: #00B5A4;
+            line-height: 1.3;
+            letter-spacing: 1px;
+        }
+        .highlight {
+          color: #E43387 !important;
+        }
+        .footer-sm {
+          color: #FFFFFF !important;
+          background: rgb(228, 51, 135);
+          background: linear-gradient(141deg, rgba(228, 51, 135,1) 0%, rgba(0, 181, 164,1) 100%);
+        }
+        ul{
+          font-family: 'Onest', sans-serif;
+        }
+        .hero-list {
+          line-height: 1.6;
+          font-size: 14px;
+          font-weight: 700;
+          color: #00B5A4;
+        }
+        .text-purple {
+          color: #E43387;
+        }
+        .p-hero{
+          color: #000000 !important;
+        }
+        .oui-chef {
+          color:#E43387 !important;
+          font-weight: 600;
+          margin-top: 6px;
+          font-size: small;
+        }
+        .hero-desc {
+          color:#384184 !important;
+          font-weight: 600;
+          margin-top: 6px;
+          font-size: small;
+          font-style: italic;
+        }
+        .form input {
+            padding:15px !important;
+        }
+        .ital {
+          font-style: italic;
+          padding-right:4px;
+          color:#E43387 !important;
+        }
+        @media only screen and (min-width: 800px) { 
+          .brnodisplay {
+              display: none;
+          }
+        }
+        .bright-green {
+          color: #20b7a5 !important;
+          font-size: 1em !important;
+        }
+        .teal-text {
+          color: #20b7a5 !important;
+        }
+        .thick {
+          font-weight: 800;
+        }
+        .btn-action:hover {
+            background-color:#E43387;
+            transition: 0.7s;
+        }
+        .main-h1 {
+          font-size: 4em;
+          line-height: 1;
+          font-weight: 900;
+        }
+        .features {
+        padding: 60px 0 !important;
+        }
+        .carou {
+          overflow: hidden;
+        }
+        .slider {
+          animation: slidein 30s linear infinite;
+          white-space: nowrap;
+          .logos {
+            width: 100%;
+            display: inline-block;
+            margin: 0px 0;
+            .fab {
+              width: calc(100% / 5);
+              animation: fade-in 0.5s 
+                cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+            }
+          }
+        }
+        @keyframes slidein {
+          from {
+            transform: translate3d(0, 0, 0);
+          }
+          to {
+            transform: translate3d(-100%, 0, 0);
+          }
+        }
+
+        @keyframes fade-in {
+          0% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+        .carousel-logo {
+          opacity: 0.5;
+        }
+      </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <!-- Navbar Section -->
+      <nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+        <div class="container container">
+          <a class="navbar-brand" href="#"><img
+              src="assets\images\shef_SVG_logo.svg" class="mh-25" /></a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto navbar-right">
+              <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                  href="#main">Accueil</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                  href="#features">Fonctionnalités</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                  href="#services">Services</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                  href="#reviews">Qui nous sommes</a></li>
+              <li class="nav-item"><a class="nav-link js-scroll-trigger"
+                  href="#pricing">Tarif</a></li>
+              <li class="nav-item"><a class="nav-link"
+                  href="https://app.shef.fr"><span style="color:#E43387;">Connexion</span></a></li>
+            </ul>
+          </div>
+        </div>
+      </nav><!-- Navbar End -->
+
+      <div id="main" class="main">
+        <div class="hero">
+          <div class="container">
+            <div class="row align-center text-center">
+              <div class="col-md-12 col-lg-5">
+                <div class="hero-content">
+                  <h1 class="mb-2 main-h1 text-uppercase"> T’es patron de resto.<br>
+                    <span id="Highlight" class="p-1 pl-2 pr-2 text-white" style="text-transform: uppercase;">Pas NOUNOU!</span></h1>
+                  <p class="p-hero">
+                    Avec Shef, même KEVIN le nouveau sait quoi faire.<br>
+                    Fini les formations et les “j’savais pas”. Une checklist claire, au bon moment, pour chaque poste. 
+                  </p>
+                  <!-- <p class="font-italic">
+                    L'appli Shef, c’est ton plan de bataille. Pour chaque membre de l’équipe, à chaque moment de la journée.
+                  </p> -->
+                  <a class="btn btn-primary btn-action mb-0" type="button"
+                        href="https://zcvdkvsv173.typeform.com/to/rSkopoYH">Montre-moi mais vite fait!</a>
+                  <p class="font-italic mt-1 teal-text">⭐️ BONUS: T’es aussi carré pour le HACCP – sans y penser, sans te faire suer.</p>
+                </div>
+              </div>
+              <div class="col-md-12 col-lg-6 offset-lg-1">
+                <img class="img-fluid" src="assets\images\shef_hero_gif.gif"
+                  alt="Hero">
+              </div>
+            </div>
+            <div class="container carou h-100">
+              <div class="row align-items-center h-100">
+                <div class="container carou rounded">
+                  <h1 class="text-center mb-0">Ces restos ont dit adieu aux galères:</h1>
+                  <div class="slider">
+                    <div class="logos">
+                      <img src="assets\images\carousel\6.jpg" class="img-fluid carousel-logo"/>
+                      <img src="assets\images\carousel\5.jpg" class="img-fluid carousel-logo"/>
+                      <img src="assets\images\carousel\4.jpg" class="img-fluid carousel-logo"/>
+                      <img src="assets\images\carousel\3.jpg" class="img-fluid carousel-logo"/>
+                      <img src="assets\images\carousel\2.jpg" class="img-fluid carousel-logo"/>
+                      <img src="assets\images\carousel\1.jpg" class="img-fluid carousel-logo"/>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="features" class="features">
+          <div class="container-m">
+            <div class="row text-center">
+              <div class="col-md-12">
+                <img class="img-fluid" src="assets/images/shef-taches.png">
+                <div class="features-intro">
+                  <h3>Une checklist intelligente pour que tout roule — sans répéter, sans t’arracher les cheveux.</h3>
+                  <p>Les checklists s’affichent automatiquement aux bons moments, pour les bonnes personnes.
+Pas de menu, pas de “chercher dans l’app”.
+Juste une page claire avec ce qu’il y a à faire maintenant.
+Pas besoin d’expliquer. Même Kevin peut suivre. BRAVO KEVIN!
+                  </p>
+<a class="btn btn-primary btn-action mb-0" type="button"
+                        href="https://zcvdkvsv173.typeform.com/to/rSkopoYH">Ok, fais-moi gagner du temps</a>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-6">
+                <div class="feature-list">
+                  <div class="card-icon">
+                    <div class="card-img">
+                      <i class="fa-solid fa-user-check fa-2xl"
+                        style="color:#00B5A4"></i>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <h3>Simplicité</h3>
+                    <p>Tu prépares tes ouvertures, fermetures, nettoyages... et eux, ils cochent.
+                        Fini les “J'savais pas que je devais éteindre la friteuse” 🤦
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-6">
+                <div class="feature-list">
+                  <div class="card-icon">
+                    <div class="card-img">
+                      <i class="fa-solid fa-file-shield fa-2xl"
+                        style="color:#00B5A4"></i>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <h3>HACCP</h3>
+                    <p>Pas de formation, pas de jargon, pas de bordel.
+                        On a transformé le truc le plus relou en checklist à cocher.
+                        T’as juste à suivre la liste. T’as même plus à mentir dans le carnet.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-6">
+                <div class="feature-list">
+                  <div class="card-icon">
+                    <div class="card-img">
+                      <i class="fa-solid fa-temperature-low fa-2xl"
+                        style="color:#00B5A4"></i>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <h3>Températures</h3>
+                    <p>
+                      Les frigos parlent. Toi tu respires.
+                      Relevés automatiques depuis les capteurs.
+                      Zéro oubli. Zéro triche. Zéro stress.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-6">
+                <div class="feature-list">
+                  <div class="card-icon">
+                    <div class="card-img">
+                      <i class="fa-solid fa-triangle-exclamation fa-2xl"
+                        style="color:#00B5A4"></i>
+                    </div>
+                  </div>
+                  <div class="card-text">
+                    <h3>Alertes</h3>
+                    <p>On t’envoie un mail si un truc important n’est pas fait.
+T’es au courant avant que ça parte en cacahuète.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="services" >
+          <div class="container-m">
+            <div class="row text-center mt-4">
+              <div class="col-md-12">
+                <img class="img-fluid" src="assets/images/shef_screen.png">
+                <div class="features-intro">
+                  <h3>Ce que t’as pas envie de gérer ? On le surveille pour toi.</h3>
+                  <p class="p-hero">T’as déjà signé 4 jours de checklists d’un coup...</p>
+                  <p>On l’a tous fait.<br>
+                    Shef, lui, le fait pour de vrai.
+Plan de nettoyage clair, checké, retrouvé. <span class="text-purple">Terminé les carnets bidons planqués dans le tiroir.</span>
+                  </p>
+                  <a class="btn btn-primary btn-action mb-0" type="button"
+                        href="https://zcvdkvsv173.typeform.com/to/rSkopoYH">Montre-moi l’outil</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div id="reviews" class="yd-reviews"
+          style="background: #f8f9fa !important;"><!-- Pelican Reviews -->
+          <div class="container-s">
+            <div class="row text-center">
+              <div class="col-md-12 col-lg-8 offset-lg-2">
+                <img class="img-fluid" src="assets/images/shef_restaurateur.png" alt>
+              </div>
+              <div class="col-sm-12 col-lg-8 offset-lg-2">
+                <div class="intro">
+                  <h1>Moi c’est Daniel, et je suis <span id="HightlightR" class="text-white p-1">restaurateur</span></h1>
+                  <p class="p-hero">
+                    Pas un développeur en baskets blanches, mais un mec en cuisine en Crocs bien défoncés. 
+                    J’ai déjà fait la plonge à 2h du mat’, vidé le bac à graisse avec une louche,
+                    et remplacé un serveur le 14 juillet après son "gros rhume" surprise.
+                  </p>
+                  <hr>
+                  <h2 style="color:#E43387;font-size: 22px !important;">C’est pour ça que j’ai créé Shef :</h2>
+                  <ul class="mt-3">
+                    <li>🧾 Pour que ton resto tourne même quand t’as pas dormi.</li><br>
+                    <li>💥 Pour que tes tâches soient faites, traçables, et que l’administration te lâche la grappe.</li><br>
+                    <li>🧠 Et surtout, pour pas devenir fou à force de répéter les mêmes trucs à ton équipe.</li>
+                  </ul>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pelican Reviews Ends -->
+
+        <div id="pricing" class="pricing-section text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-8 offset-sm-2">
+                <div class="pricing-intro">
+                  <h1>Tarification sans BULLSHIT!</h1>
+                  <p style="text-transform: uppercase; color:#E43387;" id="">
+                    <span id="Circle" class="p-2">SHEF c’est pas la SACEM.
+T’as testé, t’as pas kiffé ? Aucun souci!</span>
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-md-6">
+                    <div class="table-left">
+                      <h3>🧽 Essai 100% Gratuit</h3>
+                      <p>Si ça te fait pas gagner du temps,
+on descend chez toi et on nettoie ton bac à graisse avec notre brosse à dents.</p>
+                      <div class="pricing-details">
+                        <span>👊</span>
+                      </div>
+                      <a class="btn btn-primary btn-action" type="button"
+                        target="_blank"
+                        href="https://zcvdkvsv173.typeform.com/to/rSkopoYH">Essai
+                        gratuit</a>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="table-right">
+                      <h3>Abonnement mensuel</h3>
+                      <p>On n’est pas l’URSSAF.
+On demande pas un pourcentage de ta vie.
+<br>
+Juste un petit prix pour une app simple et solide.</p>
+
+                      <div class="pricing-details">
+                        <span>€29 / Mois</span>
+                      </div>
+                      <a class="btn btn-primary btn-action btn-white"
+                        type="button"
+                        target="_blank"
+                        href="https://zcvdkvsv173.typeform.com/to/rSkopoYH">Demo en 10min MAX!</a>
+                    </div>
+                  </div>
+                </div>
+                <p class="refund-txt">* ✅ La garantie anti-galère: On n’est pas un centre d’appel.
+On est comme toi. On bosse en cuisine, on déteste perdre du temps.
+On décroche. On écoute. On règle le truc. Point.
+</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pelican Footer Section -->
+        <div class="footer-sm">
+          <div class="container-m">
+            <div class="row">
+              <div class="col-md-4">
+                <a class="footer-logo"
+                  href="https://zcvdkvsv173.typeform.com/to/rSkopoYH">Shef</a>
+              </div>
+              <div class="col-md-4">
+                <h6>&copy; 2025</h6>
+              </div>
+              <div class="col-md-4">
+                <ul>
+                  <li><a href="#">Tiktok</a></li>
+                  <li><a href="#">Instagram</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Scroll To Top -->
+       
+        <!-- Scroll To Top Ends-->
+
+      </div> <!-- Main -->
+    </div><!-- Wrapper -->
+
+    <!-- Jquery and Js Plugins -->
+    <script type="text/javascript" src="assets/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript" src="assets/js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.validate.min.js"></script>
+    <script type="text/javascript" src="assets/js/plugins.js"></script>
+    <script type="text/javascript" src="assets/js/custom.js"></script>
+    <script src="https://kit.fontawesome.com/fbdb574d73.js"
+      crossorigin="anonymous"></script>
+    <script type="module"> 
+      import { annotate } from 'https://unpkg.com/rough-notation?module';
+      const e = document.querySelector('#Highlight');
+      const c = document.querySelector('#Circle');
+      const r = document.querySelector('#HightlightR');
+      const annotation_e = annotate(e, { type: 'highlight', color: '#E43387'});
+      const annotation_c = annotate(c, { type: 'box', color: '#E43387', strokeWidth: 4});
+      const annotation_r = annotate(r, { type: 'highlight', color: '#E43387'});
+      annotation_e.show();
+      annotation_c.show();
+      annotation_r.show();
+    </script>
+  </body>
+</html>
